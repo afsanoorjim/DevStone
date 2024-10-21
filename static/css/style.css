@@ -2,11 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(2,33,2, .6);
+    background: rgba(0, 195, 255, 0.103);
+    padding: 1vh 1vw;
+}
+.nav-logo{
+    font-size: 2.5rem;
+    font-weight: 1000;
+    background-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 5px solid;
+    -webkit-text-fill-color: black;
 }
