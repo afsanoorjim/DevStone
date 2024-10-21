@@ -34,3 +34,18 @@ nav{
     list-style: none;
     margin-inline: 2vw;
 }
+.nav-links ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(0, 0, 0);
+}
+.subscribe button{
+    padding: 1vh 2vw;
+    font-size: 1rem;
+    font-weight: 700;
+    outline:none;
+    border: 1px solid black;
+    background: transparent;
+    border-radius: 20px;
+}
