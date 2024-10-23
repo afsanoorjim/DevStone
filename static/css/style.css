@@ -83,11 +83,8 @@ section#Home{
 }
 section#about {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-image: url('../images/img2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center horizontally */
@@ -98,12 +95,14 @@ section#about {
 }
 
 section#about .overlay {
+    background-image: url('../images/img2.jpg');
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for better contrast */
     z-index: 1; /* Ensure it is below the text */
 }
 
