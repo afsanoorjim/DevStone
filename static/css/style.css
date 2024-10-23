@@ -83,26 +83,31 @@ section#Home{
 }
 section#about {
     position: relative;
-    height: 100%;
     width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background-image: url('../images/img2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     text-align: center; /* Center text alignment */
-    color: white;
-    padding: 20px;
+    color: rgb(255, 255, 255);
 }
 
 section#about .overlay {
-    background-image: url('../images/img2.jpg');
     position: absolute;
     top: 0;
     left: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.857);
+    filter: blur(10px);
     z-index: 1; /* Ensure it is below the text */
 }
 
@@ -111,7 +116,7 @@ section#about h2,
 section#about p {
     position: relative; /* Position relative to overlay */
     z-index: 2; /* Ensure it is above the overlay */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for clarity */
+    text-shadow: 2px 2px 4px rgb(255, 255, 255); /* White shadow for clarity */
 }
 
 section#about h1 {
@@ -135,6 +140,7 @@ section#about ul {
     list-style: none; /* Remove default list styling */
     padding: 0; /* Remove padding */
     margin: 20px 0; /* Add margin */
+    z-index: 2;
 }
 
 section#about ul li {
@@ -163,6 +169,16 @@ section#about a {
 section#about a:hover {
     color: #FFC300; /* Change color on hover */
     transition: color 0.3s; /* Smooth transition */
+}
+.core-values {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* This centers the block */
+    text-align: left; /* Ensures the text remains left-aligned */
+    z-index: 2;
+}
+
+.core-values h2 {
+    text-align: center; /* Center the heading if desired */
 }
 
 @media (max-width: 768px) {
