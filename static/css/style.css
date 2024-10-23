@@ -48,6 +48,12 @@ nav{
     border: 1px solid black;
     background: transparent;
     border-radius: 20px;
+    cursor:pointer;
+    transition: .5s;
+}
+.subscribe button:hover{
+    background:black;
+    color:white;
 }
 main{
     padding: 1vh 1vw;
