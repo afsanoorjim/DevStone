@@ -106,7 +106,7 @@ section#about .overlay {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.857);
+    background-color: rgba(0, 0, 0, 0.685);
     filter: blur(10px);
     z-index: 1; /* Ensure it is below the text */
 }
@@ -176,7 +176,30 @@ section#about a:hover {
     text-align: left; /* Ensures the text remains left-aligned */
     z-index: 2;
 }
-
+.keyword-container{
+    display: flex;
+    width: 100%;
+    backdrop-filter: blur(15px);
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    flex-direction: column;
+    overflow: hidden;
+}
+.keyword-container strong{
+    padding: 2vh 2vw;
+    transform: translateX(40%);
+    transition: all .4s;
+}
+.keyword-container strong:last-child{
+    border:  none;
+}
+.keyword-container strong:hover{
+    transform: translateX(0);
+} 
+hr{
+    width: 100%;
+}
 .core-values h2 {
     text-align: center; /* Center the heading if desired */
 }
